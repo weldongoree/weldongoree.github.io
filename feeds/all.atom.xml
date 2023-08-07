@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Weldon's scratchpad</title><link href="https://weldongoree.github.io/" rel="alternate"></link><link href="https://weldongoree.github.io/feeds/all.atom.xml" rel="self"></link><id>https://weldongoree.github.io/</id><updated>2023-08-07T12:09:00+05:30</updated><entry><title>A possible fix for qmidiarp on F38</title><link href="https://weldongoree.github.io/fedora-qmidiarp-no-hardening.html" rel="alternate"></link><published>2023-08-07T12:09:00+05:30</published><updated>2023-08-07T12:09:00+05:30</updated><author><name>Weldon Goree</name></author><id>tag:weldongoree.github.io,2023-08-07:/fedora-qmidiarp-no-hardening.html</id><summary type="html">&lt;p class="first last"&gt;An at least partial fix for qmidiarp crashing on F38 when an LFO or sequencer are added&lt;/p&gt;
+</summary><content type="html">&lt;p&gt;I ran into &lt;a class="reference external" href="https://bugzilla.redhat.com/show_bug.cgi?id=2174968"&gt;this bug&lt;/a&gt; while messing around with
+my DAW and post this in hopes it may help somebody else.&lt;/p&gt;
+&lt;p&gt;On Fedora 38, &lt;a class="reference external" href="https://qmidiarp.sourceforge.net/"&gt;qmidiarp&lt;/a&gt; will crash with a failed assertion if you attempt to add an LFO or sequencer
+to the program (both standalone and LV2). A workable fix is to rebuild it without stack protection, either just run configure/make/install
+yourself if you want it outside of package management, or use &lt;a class="reference external" href="https://github.com/weldongoree/wmg-srpms/blob/main/qmidiarp.spec"&gt;this spec file&lt;/a&gt;
+to build an RPM if you want package management niceness.&lt;/p&gt;
+&lt;p&gt;This spec builds against &lt;cite&gt;pipewire-jack-audio-connection-kit-devel&lt;/cite&gt; rather than &lt;cite&gt;jack-audio-connection-kit-devel&lt;/cite&gt;, which is what you probably
+want if you're running Fedora (since &lt;cite&gt;jack-audio-connection-kit-devel&lt;/cite&gt; will force the removal of &lt;cite&gt;pipewire-jack-audio-connection-kit&lt;/cite&gt;). Or
+just built it in a container against jack if you want.&lt;/p&gt;
+</content><category term="Software"></category><category term="fedora"></category><category term="music"></category><category term="qmidiarp"></category></entry></feed>
