@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Weldon's scratchpad - Music</title><link href="https://weldongoree.github.io/" rel="alternate"></link><link href="https://weldongoree.github.io/feeds/music.atom.xml" rel="self"></link><id>https://weldongoree.github.io/</id><updated>2023-08-09T16:50:00+05:30</updated><entry><title>A weirdly sinister loop</title><link href="https://weldongoree.github.io/a-weirdly-sinister-loop.html" rel="alternate"></link><published>2023-08-09T16:50:00+05:30</published><updated>2023-08-09T16:50:00+05:30</updated><author><name>Weldon Goree</name></author><id>tag:weldongoree.github.io,2023-08-09:/a-weirdly-sinister-loop.html</id><summary type="html">&lt;p class="first last"&gt;A weirdly sinister loop I made&lt;/p&gt;
+</summary><content type="html">&lt;p&gt;I'm working on a house album and was trying to come up with something slightly downtempo and
+not too strident, but this wound up being weirdly sinister:&lt;/p&gt;
+&lt;audio controls&gt;&lt;source src="/images/sinister.mp3"&gt;Sorry, your browser doesn&amp;apos;t embed audio&lt;/audio&gt;&lt;p&gt;The pads are basic triple oscillators and the bass is an FM synth I was trying to do things with. I normally
+find the a minor -&amp;gt; F major 7 sequence kind of plaintive but this was just downright ominous.&lt;/p&gt;
+</content><category term="Music"></category><category term="loop"></category></entry></feed>
